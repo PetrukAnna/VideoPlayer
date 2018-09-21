@@ -1,0 +1,206 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #b4eba2;
+}
+
+.container {
+	width: 700px;
+	height: 394px;
+	margin: 10px auto;	
+}
+
+#container:-webkit-full-screen { 
+	height: 100%;
+	width: 100%;
+}
+
+#video {
+	width: 100%;
+	position: relative;
+}
+
+#video::-webkit-media-controls {
+  display:none !important;
+}
+
+.controls {
+	width: 100%;
+	height: 29px;
+	background-color: #e8e6e4;
+	bottom: 33px;
+	position:  relative;
+}
+
+.play-pause {
+	height: 24px;
+	width: 24px;
+	background-image: url("images/play.png");
+	float: left;
+	margin-top: 2.5px;
+	margin-left: 5px;
+}
+
+.time {
+	height: 15px;
+	width: 75px;
+	margin-left: 5px;
+	float: left;
+	padding: 7px 0px;
+	font-size: 14px;
+}
+
+.time_current {
+	height: 15px;
+	width: 32px;
+	position: relative;
+	float: left;
+	text-align: right;
+}
+
+.separate {
+	position: relative;
+	float: left;
+	margin: 0px 4px 0px 2px;
+}
+
+.time_full {
+	height: 15px;
+	width: 32px;
+	position: relative;
+	float: left;
+	text-align: right;
+}
+
+.timeline {
+	height: 26px;
+	width: 410px;
+	float: left;
+	margin-left: 5px;
+	padding-top: 3px;
+	overflow: hidden;
+}
+
+#container:-webkit-full-screen .timeline{ 
+	width: 1080px;
+}
+
+.video_duration {
+	height: 3px;
+	width: 98%;
+	margin-left: 5px;
+	background-color: #b0b0b0;
+	position: relative;
+	top: 11px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.video_progress {
+	height: 3px;
+	width: 0px;
+	position: absolute;
+	background-color: #617bff;
+}
+
+.volume {
+	height: 29px;
+	width: 135px;
+	float: left;
+	margin-left: 5px;
+}
+
+.volume_img {
+	height: 20px;
+	width: 20px;
+	background-image: url("images/volumeon.png");
+	float: left;
+	margin-left: 5px;
+	margin-top: 4.5px;
+	position: relative;
+}
+
+.volume_line {
+	height: 17px;
+	width: 100px;
+	float: left;
+	margin-left: 5px;
+	position: relative;
+	margin-top: 2px;
+	padding-top: 1px;
+}
+
+.volume_line>input {
+	width: 95px;
+	position: relative;
+}
+
+.screen {
+	height: 20px;
+	width: 20px;
+	background-image: url("images/fullscreen.png");
+	float: left;
+	margin-left: 5px;
+	margin-top: 4.5px;
+}
+
+input[type="range"] {
+  	-webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    height: 1px;
+    margin: 0px;
+    border: none;
+    padding: 1px 2px;
+    border-radius: 14px;
+    background: #b0b0b0;
+    box-shadow: inset 0 1px 0 0 #b0b0b0, inset 0 -1px 0 0 #b0b0b0;
+    -webkit-box-shadow: inset 0 1px 0 0 #b0b0b0, inset 0 -1px 0 0 #b0b0b0;
+    outline: none;
+}
+
+input[type="range"]::-moz-range-track {
+    border: inherit;
+    background: transparent;
+}
+
+input[type="range"]::-ms-track {
+    border: inherit;
+    color: transparent;
+    background: transparent;
+}
+
+input[type="range"]::-ms-fill-lower,
+input[type="range"]::-ms-fill-upper {
+    background: transparent;
+}
+
+input[type="range"]::-ms-tooltip {
+    display: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 11px;
+    height: 11px;
+    border: none;
+    border-radius: 12px;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #617bff), color-stop(100%, #245e8f)); /* android <= 2.2 */
+    background-image: -webkit-linear-gradient(top , #617bff 0, #617bff 100%);
+    background-image: linear-gradient(to bottom, #617bff 0, #617bff 100%);
+}
+input[type="range"]::-moz-range-thumb {
+    width: 40px;
+    height: 18px;
+    border: none;
+    border-radius: 12px;
+    background-image: linear-gradient(to bottom, #529de1 0, #245e8f 100%);
+}
+
+input[type="range"]::-ms-thumb {
+    width: 40px;
+    height: 18px;
+    border-radius: 12px;
+    border: 0;
+    background-image: linear-gradient(to bottom, #529de1 0, #245e8f 100%);
+}
